@@ -53,7 +53,7 @@ Article.fetchAll = function() {
     // and then render the index page (using the proper method on the articleView object).
     Article.loadAll(JSON.parse(localStorage.rawdata)); //TODO: What do we pass in to loadAll()?
     //TODO: What method do we call to render the index page?
-    Article.all.forEach(function (){
+    Article.all.forEach(function (article){
       $('#articles').append(article.toHtml());
     })
   } else {
@@ -77,5 +77,3 @@ Article.fetchAll = function() {
   )
   }
 }
- 
-

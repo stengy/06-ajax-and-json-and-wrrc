@@ -75,3 +75,4 @@ Article.fetchAll = function() {
   )
   }
 }
+ 
